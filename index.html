@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="static/fonts/indieflower-webfont.css">
+        <link rel="stylesheet" href="static/styles/index.css">
+        <link rel="icon" href="static/images/voxi.svg">
+        <script src="static/scripts/jquery-3.6.0.min.js"></script>
+        <title>Voxi (Lvmostwanted)</title>
+    </head>
+    <body>
+        <main id="main">
+            <div id="wrapper">
+                <div class="heading animatable">Hi, I'm</div>
+                <div class="caption animatable">{ voxi }</div>
+                <div class="click-me animatable"><a href="https://github.com/Lvmostwanted" target="_blank">click me</a></div>
+            </div>        
+        </main>
+
+        <div class="loader">
+            <div class="background"></div>
+            <div class="pulse"></div>
+        </div>
+        <script>
+            jQuery(document).ready(function() {
+                setTimeout(function() {
+                    $('body').addClass('overflow');
+                    $('.loader').addClass('loaded');
+                    $('#main').addClass('visible');
+                }, 500);
+            });
+        </script>
+    </body>
+</html>
